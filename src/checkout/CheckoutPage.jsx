@@ -6,13 +6,13 @@ const CheckoutPage = () => {
   return (
     <div className="container">
       <div className="checkout-header">
-        <h1 className="checkout-title">Checkout</h1>
-        <p className="checkout-subtitle">Review your cart and complete your purchase</p>
+        <h1 className="checkout-title">Finalizar Compra</h1>
+        <p className="checkout-subtitle">Revisa tu carrito y completa tu compra</p>
       </div>
 
       <div className="checkout-layout">
         <div className="checkout-card">
-          <h2 className="checkout-widget-title">Shopping Cart</h2>
+          <h2 className="checkout-widget-title">Carrito de Compras</h2>
           <CartWidgetWrapper />
         </div>
 

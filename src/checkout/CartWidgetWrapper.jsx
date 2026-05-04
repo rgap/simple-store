@@ -82,9 +82,9 @@ const CartWidgetWrapper = () => {
             borderRadius: "4px",
           }}
         >
-          <p>Your cart is empty</p>
+          <p>Tu carrito está vacío</p>
           <p style={{ color: "#666", fontSize: "0.9rem", marginTop: "0.5rem" }}>
-            Add some items to your cart to proceed with checkout.
+            Agrega productos a tu carrito para proceder con la compra.
           </p>
         </div>
       ) : (

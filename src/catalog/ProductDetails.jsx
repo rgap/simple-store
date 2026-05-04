@@ -39,7 +39,7 @@ const ProductDetails = () => {
   if (loading) {
     return (
       <div className="container">
-        <p>Loading product...</p>
+        <p>Cargando producto...</p>
       </div>
     );
   }
@@ -47,7 +47,7 @@ const ProductDetails = () => {
   if (!product) {
     return (
       <div className="container">
-        <p>Product not found</p>
+        <p>Producto no encontrado</p>
       </div>
     );
   }
@@ -66,7 +66,7 @@ const ProductDetails = () => {
 
           <div className="product-detail-actions">
             <Button variant="success" size="medium" onClick={handleAddToCart}>
-              Add to Cart
+              Agregar al Carrito
             </Button>
           </div>
         </div>

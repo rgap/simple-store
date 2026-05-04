@@ -4,7 +4,7 @@ import React from "react";
 import { Link, Outlet, useLocation } from "react-router-dom";
 
 const CartWidgetContainer = () => (
-  <ErrorBoundary fallbackMessage="Failed to load cart. Please try again later.">
+  <ErrorBoundary fallbackMessage="No se pudo cargar el carrito. Por favor, intenta más tarde.">
     <CartWidget />
   </ErrorBoundary>
 );
@@ -19,13 +19,13 @@ const RootLayout = () => {
         <div className="nav-container">
           <div className="nav-links">
             <Link to="/" className="nav-link">
-              Home
+              Inicio
             </Link>
             <Link to="/catalog" className="nav-link">
-              Catalog
+              Catálogo
             </Link>
             <Link to="/checkout" className="nav-link">
-              Checkout
+              Pagar
             </Link>
           </div>
         </div>

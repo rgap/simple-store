@@ -5,12 +5,12 @@ import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <div className="home-container">
-      <h1 className="home-title">Welcome to Our Store</h1>
-      <p className="home-description">Discover our amazing products and great deals!</p>
+      <h1 className="home-title">Bienvenido a Nuestra Tienda</h1>
+      <p className="home-description">¡Descubre nuestros increíbles productos y las mejores ofertas!</p>
 
       <div className="home-actions">
         <Link to="/catalog" className="no-underline">
-          <Button variant="primary">Browse Catalog</Button>
+          <Button variant="primary">Ver Catálogo</Button>
         </Link>
       </div>
     </div>

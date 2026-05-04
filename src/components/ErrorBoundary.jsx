@@ -24,9 +24,9 @@ class ErrorBoundary extends React.Component {
     if (this.state.hasError) {
       return (
         <div className="error-container">
-          <p>{this.props.fallbackMessage || "Failed to load component. Please try again later."}</p>
+          <p>{this.props.fallbackMessage || "No se pudo cargar el componente. Por favor, intenta más tarde."}</p>
           <Button variant="primary" onClick={this.resetError}>
-            {this.props.retryText || "Retry"}
+            {this.props.retryText || "Reintentar"}
           </Button>
         </div>
       );

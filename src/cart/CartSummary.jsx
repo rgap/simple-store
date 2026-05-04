@@ -16,7 +16,7 @@ const CartSummary = () => {
     <div className="summary-card">
       <div className="cart-summary">
         <div className="summary-row">
-          <span>Items:</span>
+          <span>Productos:</span>
           <span>{totalItems}</span>
         </div>
         <div className="summary-row">
@@ -24,7 +24,7 @@ const CartSummary = () => {
           <span>${subtotal.toFixed(2)}</span>
         </div>
         <div className="summary-row">
-          <span>Tax (10%):</span>
+          <span>IGV (10%):</span>
           <span>${tax.toFixed(2)}</span>
         </div>
         <div className="summary-row summary-total">
@@ -34,7 +34,7 @@ const CartSummary = () => {
       </div>
 
       <Button variant="success" onClick={() => navigate("/checkout")} disabled={items.length === 0} fullWidth>
-        Proceed to Checkout
+        Ir a Pagar
       </Button>
     </div>
   );

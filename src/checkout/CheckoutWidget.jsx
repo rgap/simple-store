@@ -32,8 +32,8 @@ const CheckoutWidget = () => {
       <div className="checkout-widget">
         <div className="purchase-complete">
           <div className="purchase-complete-icon">✅</div>
-          <h2>Purchase Complete!</h2>
-          <p>Thank you for your order. You will be redirected shortly.</p>
+          <h2>¡Compra Completada!</h2>
+          <p>Gracias por tu pedido. Serás redirigido en breve.</p>
         </div>
       </div>
     );
@@ -41,17 +41,17 @@ const CheckoutWidget = () => {
 
   return (
     <div className="checkout-widget">
-      <h2 className="checkout-widget-title">Checkout Summary</h2>
+      <h2 className="checkout-widget-title">Resumen de la Compra</h2>
 
       {items.length > 0 ? (
         <>
           <div className="checkout-items">
-            <h3 className="checkout-items-title">Items to purchase:</h3>
+            <h3 className="checkout-items-title">Productos a comprar:</h3>
             {items.map((item, index) => (
               <div key={item.id || index} className="checkout-item">
                 <div className="checkout-item-info">
                   <div className="checkout-item-name">{item.name}</div>
-                  <div className="checkout-item-quantity">Quantity: {item.quantity}</div>
+                  <div className="checkout-item-quantity">Cantidad: {item.quantity}</div>
                 </div>
                 <div className="checkout-item-price">${(item.price * item.quantity).toFixed(2)}</div>
               </div>
@@ -64,7 +64,7 @@ const CheckoutWidget = () => {
               <span className="summary-value">${subtotal.toFixed(2)}</span>
             </div>
             <div className="summary-row">
-              <span className="summary-label">Tax (10%):</span>
+              <span className="summary-label">IGV (10%):</span>
               <span className="summary-value">${tax.toFixed(2)}</span>
             </div>
             <div className="summary-row summary-total">
@@ -74,14 +74,14 @@ const CheckoutWidget = () => {
           </div>
 
           <Button variant="success" onClick={handleCheckout} disabled={isProcessing} fullWidth size="medium">
-            {isProcessing ? "Processing..." : "Complete Purchase"}
+            {isProcessing ? "Procesando..." : "Completar Compra"}
           </Button>
         </>
       ) : (
         <div className="empty-checkout">
           <div className="empty-checkout-icon">🛒</div>
-          <h3 className="empty-checkout-title">No items in cart</h3>
-          <p className="empty-checkout-message">Add some items to your cart to proceed with checkout.</p>
+          <h3 className="empty-checkout-title">Sin productos en el carrito</h3>
+          <p className="empty-checkout-message">Agrega productos a tu carrito para proceder con la compra.</p>
         </div>
       )}
     </div>

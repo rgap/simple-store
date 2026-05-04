@@ -25,8 +25,8 @@ const ProductList = () => {
     return (
       <div className="container">
         <div className="catalog-header">
-          <h1 className="catalog-title">Product Catalog</h1>
-          <p className="catalog-subtitle">Loading products...</p>
+          <h1 className="catalog-title">Catálogo de Productos</h1>
+          <p className="catalog-subtitle">Cargando productos...</p>
         </div>
       </div>
     );
@@ -35,8 +35,8 @@ const ProductList = () => {
   return (
     <div className="container">
       <div className="catalog-header">
-        <h1 className="catalog-title">Product Catalog</h1>
-        <p className="catalog-subtitle">Discover our amazing collection of products</p>
+        <h1 className="catalog-title">Catálogo de Productos</h1>
+        <p className="catalog-subtitle">Descubre nuestra increíble colección de productos</p>
       </div>
 
       <div className="product-grid">
